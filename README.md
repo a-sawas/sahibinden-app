@@ -26,14 +26,13 @@ A full-stack classified listings desktop application built with C# WinForms and 
 ## Getting Started
 
 ### Prerequisites
-- .NET 8.0
-- Visual Studio 2022
+* .NET 8.0
+* Visual Studio 2022
+* PostgreSQL (with DBeaver installed)
 
-````markdown
-# Setup
+### Setup
 
-## 1. Clone the Repository
-
+#### 1. Clone the Repository
 ```bash
 git clone https://github.com/a-sawas/sahibinden-app.git
 ````
