@@ -21,6 +21,22 @@ A full-stack classified listings desktop application built with C# WinForms and 
 | Auth | BCrypt.Net |
 | Architecture | Single MainShell with swappable UserControls |
 
+## Screenshots
+
+**Main Listings & Search**
+![Main Screen](screenshots/main_screen.png)
+
+**Real-Time Messaging**
+![Messages](screenshots/messages.png)
+
+**User Profile Settings**
+![Settings](screenshots/settings.png)
+
+**Admin Dashboard & Audit Log**
+![Admin Panel](screenshots/admin_panel.png)
+
+---
+
 
 
 ## Getting Started
