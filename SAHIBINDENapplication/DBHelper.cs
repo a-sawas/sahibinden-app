@@ -11,7 +11,7 @@ namespace SAHIBINDENapplication
     public static class DBHelper
     {
         private const string ConnStr =
-            "Host=localhost;Port=5432;Username=postgres;Password=YOUR_PASSWORD_HERE;Database=sahibinden";
+            "Host=localhost;Port=5432;Username=YOUR_USERNAME;Password=YOUR_PASSWORD_HERE;Database=sahibinden";
 
         public static NpgsqlConnection GetConnection()
         {
