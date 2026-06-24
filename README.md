@@ -33,32 +33,41 @@ A full-stack classified listings desktop application built with C# WinForms and 
 ### Setup
 
 #### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/a-sawas/sahibinden-app.git
-````
+```
 
-## 2. Import the Database via DBeaver
+#### 2. Import the Database via DBeaver
 
 1. Open **DBeaver** and connect to your local PostgreSQL server.
 2. Create a new database named `sahibinden_db`.
-3. Right-click the newly created database.
-4. Navigate to **Tools → Restore**.
-5. Under the **Input File** section, select the provided `.backup` file included in this repository.
-6. Click **Start** to begin the restore process.
-7. Once completed, right-click the database and select **Refresh** to view all imported tables.
+3. Right-click the newly created database and select **Tools → Restore**.
+4. Under the **Input File** section, select the `.backup` file provided in this repository.
+5. Click **Start** to restore the database.
+6. After the process completes, right-click the database and select **Refresh** to verify that all tables have been imported successfully.
 
-## 3. Configure Environment Variables
-
-1. Copy `.env.example` to `.env`.
-2. Fill in your database credentials.
-3. Ensure the database name matches `sahibinden_db`.
-
-## 4. Run the Application
+#### 3. Configure Database Credentials
 
 1. Open `SAHIBINDENapplication.sln` in Visual Studio.
-2. Build and run the project.
+2. In **Solution Explorer**, locate and open `DBHelper.cs`.
+3. Find the PostgreSQL connection string and replace `YOUR_LOCAL_PASSWORD` with your local PostgreSQL password:
+
+```csharp
+Host=localhost;Port=5432;Username=YOUR_USERNAME;Password=YOUR_LOCAL_PASSWORD;Database=sahibinden_db
+```
+
+4. Save the file.
+
+> **Note:** Ensure that the database name in the connection string matches the restored database (`sahibinden_db`).
+
+#### 4. Run the Application
+
+1. Build the solution.
+2. Run the application from Visual Studio.
 
 ---
+
 
 # Test Accounts
 
@@ -80,9 +89,6 @@ Use the following pre-configured accounts to test the application:
 The application currently stores image locations using **absolute local file paths**. Since these paths are specific to the original development environment, they would be invalid on other machines and result in broken image references.
 
 To avoid errors and ensure a smooth testing experience, listing images have been excluded from the database dump.
-
-```
-```
 
 
 
