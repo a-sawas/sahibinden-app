@@ -67,10 +67,11 @@ git clone https://github.com/a-sawas/sahibinden-app.git
 
 1. Open `SAHIBINDENapplication.sln` in Visual Studio.
 2. In **Solution Explorer**, locate and open `DBHelper.cs`.
-3. Find the PostgreSQL connection string and replace `YOUR_LOCAL_PASSWORD` with your local PostgreSQL password:
+3. Find the PostgreSQL connection string and replace `YOUR_USERNAME` and `YOUR_LOCAL_PASSWORD` with your local PostgreSQL credentials (the default username is usually `postgres`):
 
 ```csharp
 Host=localhost;Port=5432;Username=YOUR_USERNAME;Password=YOUR_LOCAL_PASSWORD;Database=sahibinden_db
+
 ```
 
 4. Save the file.
